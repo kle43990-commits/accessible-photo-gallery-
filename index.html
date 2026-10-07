@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Accessible Photo Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body onload="addTabFocus()">
+    <main>
+      <h1>Accessible Photo Gallery</h1>
+
+      <!-- Khung hiển thị ảnh lớn -->
+      <div id="image">
+        Hover over or focus on an image below to display here.
+      </div>
+
+      <!-- Danh sách 6 hình ảnh -->
+      <div class="gallery">
+        <img
+          class="preview"
+          alt="Stylized Globe"
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/388627/globe.jpg"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        />
+
+        <img
+          class="preview"
+          alt="Abstract Lines"
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/388627/abstract.jpg"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        />
+
+        <img
+          class="preview"
+          alt="Colorful Geometric Shapes"
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/388627/shapes.jpg"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        />
+
+        <img
+          class="preview"
+          alt="City Architecture"
+          src="https://picsum.photos/id/1011/600/400"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        />
+
+        <img
+          class="preview"
+          alt="Majestic Mountains"
+          src="https://picsum.photos/id/1018/600/400"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        />
+
+        <img
+          class="preview"
+          alt="Forest Pathway"
+          src="https://picsum.photos/id/1015/600/400"
+          onmouseover="upDate(this)"
+          onmouseleave="unDo()"
+          onfocus="upDate(this)"
+          onblur="unDo()"
+        />
+      </div>
+    </main>
+  </body>
+</html>
